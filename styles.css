@@ -35,8 +35,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* Disable native cursor on desktop to use custom cursor */
-  cursor: none; 
 }
 
 html {
@@ -105,48 +103,6 @@ p {
   font-weight: 500;
 }
 
-/* === CUSTOM CURSOR === */
-.cursor-dot, .cursor-outline {
-  position: fixed;
-  top: 0; left: 0;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-}
-
-.cursor-dot {
-  width: 6px;
-  height: 6px;
-  background: var(--accent-light);
-  transition: width 0.2s, height 0.2s, background 0.2s;
-}
-
-.cursor-outline {
-  width: 40px;
-  height: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  transition: width 0.2s, height 0.2s, background 0.2s, border 0.2s;
-}
-
-/* Cursor Hover States */
-body.hovering .cursor-dot {
-  width: 0;
-  height: 0;
-}
-body.hovering .cursor-outline {
-  width: 60px;
-  height: 60px;
-  background: rgba(255, 255, 255, 0.05);
-  border-color: var(--accent-light);
-  backdrop-filter: blur(2px);
-}
-
-/* Fallback cursor for mobile/touch */
-@media (pointer: coarse) {
-  *, *::before, *::after { cursor: auto; }
-  .cursor-dot, .cursor-outline { display: none; }
-}
 
 /* === NOISE TEXTURE === */
 .noise-overlay {
