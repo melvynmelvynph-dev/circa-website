@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="logoGrad" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#D4A853"/>
+      <stop offset="100%" stop-color="#8B6914"/>
+    </linearGradient>
+    <linearGradient id="beamGrad" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#E8C97A"/>
+      <stop offset="100%" stop-color="#C9982E"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="60" cy="60" r="56" stroke="url(#logoGrad)" stroke-width="3.5" fill="none"/>
+  <!-- Inner architectural mark — abstract building/supervision motif -->
+  <!-- Vertical pillar left -->
+  <rect x="32" y="35" width="8" height="50" rx="2" fill="url(#logoGrad)"/>
+  <!-- Vertical pillar right -->
+  <rect x="80" y="35" width="8" height="50" rx="2" fill="url(#logoGrad)"/>
+  <!-- Cross beam top -->
+  <rect x="32" y="35" width="56" height="7" rx="2" fill="url(#beamGrad)"/>
+  <!-- Cross beam mid -->
+  <rect x="38" y="55" width="44" height="5" rx="1.5" fill="url(#beamGrad)" opacity="0.7"/>
+  <!-- Triangular apex / roof -->
+  <polygon points="60,18 36,38 84,38" fill="url(#logoGrad)"/>
+  <!-- Small diamond accent -->
+  <rect x="55" y="68" width="10" height="10" rx="1" fill="url(#beamGrad)" transform="rotate(45 60 73)"/>
+</svg>
