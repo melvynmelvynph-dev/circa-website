@@ -3,15 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="CIRCA2300 PTY LTD — Premier construction supervision, site coordination, and project oversight across Australia. ACN 699 207 264." />
-  <meta name="keywords" content="construction supervision, project oversight, site coordination, construction management, Australia, CIRCA2300" />
-  <meta name="author" content="CIRCA2300 PTY LTD" />
-  <title>CIRCA2300 PTY LTD | Construction Supervision &amp; Project Oversight</title>
+  <meta name="description" content="CIRCA2300 PTY LTD — Luxury construction supervision, site coordination, and project oversight across Australia." />
+  <title>CIRCA2300 | Premium Construction Supervision</title>
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Playfair Display for luxury serif headings, Montserrat for ultra-clean sans-serif body -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
 
   <!-- Phosphor Icons -->
   <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
@@ -19,405 +17,260 @@
   <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="loading">
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-outline" id="cursor-outline"></div>
+
+  <!-- Noise Texture Overlay -->
+  <div class="noise-overlay"></div>
 
   <!-- ===== NAVIGATION ===== -->
   <header class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#home" class="brand" aria-label="CIRCA2300 Home">
+      <a href="#home" class="brand hover-target" aria-label="CIRCA2300 Home">
         <img src="assets/logo.svg" alt="CIRCA2300 Logo" class="brand-logo" />
         <div class="brand-text">
-          <span class="brand-name">CIRCA<span class="brand-accent">2300</span></span>
+          <span class="brand-name">CIRCA2300</span>
           <span class="brand-sub">PTY LTD</span>
         </div>
       </a>
 
       <nav class="nav-links" id="nav-links" aria-label="Primary navigation">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#services" class="nav-link">Services</a>
-        <a href="#why-us" class="nav-link">Why Us</a>
-        <a href="#credentials" class="nav-link">Credentials</a>
-        <a href="#contact" class="nav-link nav-cta">Get In Touch</a>
+        <a href="#about" class="nav-link hover-target">The Firm</a>
+        <a href="#services" class="nav-link hover-target">Expertise</a>
+        <a href="#credentials" class="nav-link hover-target">Credentials</a>
+        <a href="#contact" class="nav-link nav-cta hover-target">Consultation</a>
       </nav>
 
-      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+      <button class="hamburger hover-target" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span>
       </button>
     </div>
   </header>
 
   <main id="home">
 
-    <!-- ===== HERO ===== -->
+    <!-- ===== IMMERSIVE HERO ===== -->
     <section class="hero">
-      <div class="hero-bg-overlay"></div>
-      <div class="hero-particles" id="hero-particles"></div>
-      <div class="container hero-grid">
-        <div class="hero-content reveal">
-          <div class="badge">
-            <i class="ph ph-shield-check"></i>
-            <span>Registered Australian Company</span>
-          </div>
-          <h1>Trusted Site Leadership for <span class="gradient-text">Modern Construction</span> Projects</h1>
-          <p class="hero-desc">CIRCA2300 PTY LTD brings calm, practical oversight to every build — helping clients maintain quality, safety, and momentum from start to finish.</p>
+      <div class="hero-bg parallax" data-speed="0.4">
+        <img src="assets/images/hero.jpg" alt="Construction site" />
+      </div>
+      <div class="hero-vignette"></div>
+      
+      <div class="container hero-content">
+        <div class="hero-text-box reveal stagger">
+          <span class="eyebrow">Established 2026</span>
+          <h1 class="split-text">Mastering the Art of <br/><em>Construction</em> Supervision.</h1>
+          <p class="hero-desc">Delivering uncompromised quality, rigorous compliance, and visionary project oversight for Australia's premier builds.</p>
           <div class="hero-actions">
-            <a href="#contact" class="btn btn-primary" id="hero-cta-consult">
-              <i class="ph ph-phone"></i>
-              Book a Consultation
-            </a>
-            <a href="#services" class="btn btn-outline" id="hero-cta-services">
-              <i class="ph ph-arrow-down"></i>
-              Explore Services
-            </a>
-          </div>
-          <div class="hero-stats">
-            <div class="hero-stat">
-              <strong>ACN</strong>
-              <span>699 207 264</span>
-            </div>
-            <div class="hero-stat-divider"></div>
-            <div class="hero-stat">
-              <strong>Director</strong>
-              <span>Simon James Lange</span>
-            </div>
-            <div class="hero-stat-divider"></div>
-            <div class="hero-stat">
-              <strong>Based in</strong>
-              <span>Australia</span>
-            </div>
-          </div>
-        </div>
-        <div class="hero-visual reveal reveal-delay-1">
-          <div class="hero-image-frame">
-            <img src="assets/images/hero.jpg" alt="Construction supervisor overlooking a modern building site at golden hour" />
-            <div class="hero-image-glow"></div>
-          </div>
-          <div class="floating-card card-1">
-            <i class="ph-fill ph-hard-hat"></i>
-            <span>Site Supervision</span>
-          </div>
-          <div class="floating-card card-2">
-            <i class="ph-fill ph-check-circle"></i>
-            <span>Quality Assured</span>
+            <a href="#contact" class="btn btn-primary hover-target">Begin a Dialogue</a>
           </div>
         </div>
       </div>
-      <div class="hero-scroll-indicator">
+      
+      <div class="hero-scroll-indicator hover-target">
+        <span class="scroll-text">Scroll to explore</span>
         <div class="scroll-line"></div>
       </div>
     </section>
 
-    <!-- ===== INFO STRIP ===== -->
+    <!-- ===== LUXURY INFO STRIP ===== -->
     <section class="info-strip">
       <div class="container strip-content">
-        <div class="strip-item reveal">
-          <i class="ph ph-buildings"></i>
-          <div>
-            <span class="strip-label">Company Number</span>
-            <strong>ACN 699 207 264</strong>
-          </div>
+        <div class="strip-item reveal stagger-1">
+          <span class="strip-label">Registry</span>
+          <strong>ACN 699 207 264</strong>
         </div>
-        <div class="strip-item reveal reveal-delay-1">
-          <i class="ph ph-user-circle"></i>
-          <div>
-            <span class="strip-label">Director</span>
-            <strong>Simon James Lange</strong>
-          </div>
+        <div class="strip-divider reveal stagger-2"></div>
+        <div class="strip-item reveal stagger-3">
+          <span class="strip-label">Director</span>
+          <strong>Simon James Lange</strong>
         </div>
-        <div class="strip-item reveal reveal-delay-2">
-          <i class="ph ph-phone"></i>
-          <div>
-            <span class="strip-label">Contact</span>
-            <strong>+61 406 977 321</strong>
-          </div>
-        </div>
-        <div class="strip-item reveal reveal-delay-3">
-          <i class="ph ph-envelope-simple"></i>
-          <div>
-            <span class="strip-label">Email</span>
-            <strong>circa2300@outlook.com</strong>
-          </div>
+        <div class="strip-divider reveal stagger-4"></div>
+        <div class="strip-item reveal stagger-5">
+          <span class="strip-label">Location</span>
+          <strong>New South Wales, AU</strong>
         </div>
       </div>
     </section>
 
-    <!-- ===== ABOUT ===== -->
-    <section id="about" class="section">
+    <!-- ===== THE FIRM (ABOUT) ===== -->
+    <section id="about" class="section section-padded">
       <div class="container about-grid">
-        <div class="about-image reveal">
-          <div class="image-showcase">
-            <img src="assets/images/supervision.jpg" alt="Construction blueprints and safety equipment on a professional site office desk" />
-            <div class="image-overlay-badge">
-              <i class="ph-fill ph-certificate"></i>
-              <span>Est. 2026</span>
+        <div class="about-content">
+          <span class="eyebrow reveal stagger">The Firm</span>
+          <h2 class="reveal stagger-1 split-text">Precision engineering meets <br/><em>relentless</em> oversight.</h2>
+          <div class="reveal stagger-2">
+            <p class="lead-text">CIRCA2300 PTY LTD redefines construction supervision by treating every site as a masterpiece of coordination.</p>
+            <p>From meticulous planning to rigorous quality assurance, we bring calm, authoritative leadership to complex environments. We understand that prestige construction demands zero compromise on safety, compliance, or schedule.</p>
+          </div>
+          
+          <div class="stats-row reveal stagger-3">
+            <div class="stat-item">
+              <span class="stat-number">100<span class="stat-suffix">%</span></span>
+              <span class="stat-label">Client Focus</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">24<span class="stat-suffix">/7</span></span>
+              <span class="stat-label">Oversight</span>
             </div>
           </div>
         </div>
-        <div class="about-content reveal reveal-delay-1">
-          <span class="eyebrow"><i class="ph ph-info"></i> About Us</span>
-          <h2>Professional Supervision Built Around <span class="gradient-text">Precision &amp; Safety</span></h2>
-          <p>CIRCA2300 PTY LTD is a construction-focused supervision company committed to supporting clients through every stage of the project lifecycle. From planning and coordination to site inspections and quality assurance, we bring calm leadership and strong project awareness to the field.</p>
-          <p>The team understands that successful construction depends on disciplined processes, trusted communication, and proactive problem-solving. That is why every project is approached with a focus on safety, compliance, schedule control, and client confidence.</p>
-          <div class="about-features">
-            <div class="about-feature">
-              <div class="feature-icon"><i class="ph ph-shield-check"></i></div>
-              <div>
-                <strong>Safety First</strong>
-                <span>Every project prioritises worker safety and regulatory compliance.</span>
-              </div>
-            </div>
-            <div class="about-feature">
-              <div class="feature-icon"><i class="ph ph-chart-line-up"></i></div>
-              <div>
-                <strong>Results Driven</strong>
-                <span>Focused on delivering measurable outcomes and project milestones.</span>
-              </div>
-            </div>
+        
+        <div class="about-visual reveal">
+          <div class="image-wrapper parallax-container">
+            <img src="assets/images/coordination.jpg" class="parallax" data-speed="-0.15" alt="Architectural coordination" />
+          </div>
+          <div class="floating-badge">
+            <i class="ph-light ph-buildings"></i>
+            <span>Uncompromising Quality</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== SERVICES ===== -->
+    <!-- ===== EXPERTISE (SERVICES) ===== -->
     <section id="services" class="section section-dark">
       <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow"><i class="ph ph-wrench"></i> Services</span>
-          <h2>Support That <span class="gradient-text">Strengthens Every Build</span></h2>
-          <p class="section-subtitle">From day-to-day site oversight to quality and compliance support, each service is tailored to keep projects moving forward with confidence.</p>
+        <div class="section-header text-center reveal">
+          <span class="eyebrow">Our Expertise</span>
+          <h2 class="split-text">Pillars of <em>Excellence</em></h2>
         </div>
-        <div class="services-grid">
-          <article class="service-card reveal" id="service-supervision">
-            <div class="service-card-image">
-              <img src="assets/images/hero.jpg" alt="On-site construction supervision" />
-              <div class="service-card-number">01</div>
+        
+        <div class="services-luxury-grid">
+          <article class="service-panel reveal stagger-1 hover-target">
+            <div class="panel-bg">
+              <img src="assets/images/hero.jpg" alt="Supervision" />
+              <div class="panel-overlay"></div>
             </div>
-            <div class="service-card-body">
-              <h3>Construction Supervision</h3>
-              <p>On-site leadership and practical oversight to keep works aligned with project goals, industry standards, and safety protocols.</p>
-              <ul class="service-list">
-                <li><i class="ph ph-check-circle"></i> Daily site inspections</li>
-                <li><i class="ph ph-check-circle"></i> Workforce coordination</li>
-                <li><i class="ph ph-check-circle"></i> Progress reporting</li>
-              </ul>
+            <div class="panel-content">
+              <div class="panel-icon"><i class="ph-light ph-hard-hat"></i></div>
+              <h3>Site Supervision</h3>
+              <p>Authoritative on-site leadership ensuring works align seamlessly with architectural intent and structural integrity.</p>
+              <div class="panel-arrow"><i class="ph-light ph-arrow-right"></i></div>
             </div>
           </article>
-          <article class="service-card reveal reveal-delay-1" id="service-coordination">
-            <div class="service-card-image">
-              <img src="assets/images/coordination.jpg" alt="Project coordination and team meetings" />
-              <div class="service-card-number">02</div>
+          
+          <article class="service-panel reveal stagger-2 hover-target">
+            <div class="panel-bg">
+              <img src="assets/images/coordination.jpg" alt="Coordination" />
+              <div class="panel-overlay"></div>
             </div>
-            <div class="service-card-body">
+            <div class="panel-content">
+              <div class="panel-icon"><i class="ph-light ph-kanban"></i></div>
               <h3>Project Coordination</h3>
-              <p>Clear scheduling, communication, and task tracking to reduce delays, improve accountability, and align all stakeholders.</p>
-              <ul class="service-list">
-                <li><i class="ph ph-check-circle"></i> Schedule management</li>
-                <li><i class="ph ph-check-circle"></i> Stakeholder communication</li>
-                <li><i class="ph ph-check-circle"></i> Resource allocation</li>
-              </ul>
+              <p>Masterful scheduling and stakeholder alignment, transforming complex variables into synchronized delivery.</p>
+              <div class="panel-arrow"><i class="ph-light ph-arrow-right"></i></div>
             </div>
           </article>
-          <article class="service-card reveal reveal-delay-2" id="service-compliance">
-            <div class="service-card-image">
-              <img src="assets/images/supervision.jpg" alt="Quality assurance and compliance inspection" />
-              <div class="service-card-number">03</div>
+          
+          <article class="service-panel reveal stagger-3 hover-target">
+            <div class="panel-bg">
+              <img src="assets/images/supervision.jpg" alt="Compliance" />
+              <div class="panel-overlay"></div>
             </div>
-            <div class="service-card-body">
+            <div class="panel-content">
+              <div class="panel-icon"><i class="ph-light ph-shield-check"></i></div>
               <h3>Quality &amp; Compliance</h3>
-              <p>Site inspections and quality monitoring that support safe, compliant, and dependable delivery every step of the way.</p>
-              <ul class="service-list">
-                <li><i class="ph ph-check-circle"></i> Compliance auditing</li>
-                <li><i class="ph ph-check-circle"></i> Quality benchmarks</li>
-                <li><i class="ph ph-check-circle"></i> Safety documentation</li>
-              </ul>
+              <p>Rigorous auditing and quality benchmarking that guarantees safe, immaculate, and legally compliant handovers.</p>
+              <div class="panel-arrow"><i class="ph-light ph-arrow-right"></i></div>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ===== WHY US ===== -->
-    <section id="why-us" class="section">
-      <div class="container why-grid">
-        <div class="why-content reveal">
-          <span class="eyebrow"><i class="ph ph-star"></i> Why Choose CIRCA2300</span>
-          <h2>Dependable Support When <span class="gradient-text">Precision Matters</span></h2>
-          <div class="why-list">
-            <div class="why-item">
-              <div class="why-icon"><i class="ph-fill ph-eye"></i></div>
-              <div>
-                <strong>Experienced Oversight</strong>
-                <p>Hands-on project leadership from seasoned construction professionals.</p>
-              </div>
-            </div>
-            <div class="why-item">
-              <div class="why-icon"><i class="ph-fill ph-target"></i></div>
-              <div>
-                <strong>Quality Focus</strong>
-                <p>Strong attention to detail and site coordination that reduces rework.</p>
-              </div>
-            </div>
-            <div class="why-item">
-              <div class="why-icon"><i class="ph-fill ph-chat-circle-dots"></i></div>
-              <div>
-                <strong>Clear Communication</strong>
-                <p>Responsive, transparent communication with clients and all stakeholders.</p>
-              </div>
-            </div>
-            <div class="why-item">
-              <div class="why-icon"><i class="ph-fill ph-arrows-out-simple"></i></div>
-              <div>
-                <strong>Flexible Support</strong>
-                <p>Scalable oversight for projects of varying size and complexity.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="why-visual reveal reveal-delay-1">
-          <div class="cta-box">
-            <div class="cta-box-glow"></div>
-            <h3>Let's Discuss Your Next Project</h3>
-            <p>Whether you need day-to-day supervision or additional project support, CIRCA2300 PTY LTD is ready to help.</p>
-            <div class="cta-stats">
-              <div class="cta-stat">
-                <strong>100%</strong>
-                <span>Client Focus</span>
-              </div>
-              <div class="cta-stat">
-                <strong>24/7</strong>
-                <span>Responsive Support</span>
-              </div>
-              <div class="cta-stat">
-                <strong>AU</strong>
-                <span>Registered</span>
-              </div>
-            </div>
-            <a href="#contact" class="btn btn-primary" id="cta-discuss">
-              <i class="ph ph-arrow-right"></i>
-              Get In Touch
-            </a>
-          </div>
+    <!-- ===== FULL WIDTH PARALLAX DIVIDER ===== -->
+    <section class="image-divider parallax-container">
+      <img src="assets/images/supervision.jpg" class="parallax" data-speed="0.3" alt="Blueprints detail" />
+      <div class="divider-overlay">
+        <div class="container text-center reveal">
+          <h2>Vision rendered into <em>Reality</em>.</h2>
         </div>
       </div>
     </section>
 
     <!-- ===== CREDENTIALS ===== -->
-    <section id="credentials" class="section section-dark">
+    <section id="credentials" class="section section-padded">
       <div class="container">
         <div class="section-header reveal">
-          <span class="eyebrow"><i class="ph ph-certificate"></i> Company Credentials</span>
-          <h2>Officially Registered &amp; <span class="gradient-text">Fully Compliant</span></h2>
-          <p class="section-subtitle">CIRCA2300 PTY LTD is a registered Australian company, operating with full transparency and corporate compliance.</p>
+          <span class="eyebrow">Official Registration</span>
+          <h2 class="split-text">Corporate <em>Credentials</em></h2>
         </div>
-        <div class="credentials-grid">
-          <div class="credential-card reveal">
-            <div class="credential-icon"><i class="ph ph-identification-badge"></i></div>
-            <span class="credential-label">Company Name</span>
-            <strong>CIRCA2300 PTY LTD</strong>
+        
+        <div class="credentials-table reveal stagger-1">
+          <div class="cred-row">
+            <div class="cred-label">Entity Name</div>
+            <div class="cred-value">CIRCA2300 PTY LTD</div>
           </div>
-          <div class="credential-card reveal reveal-delay-1">
-            <div class="credential-icon"><i class="ph ph-hash"></i></div>
-            <span class="credential-label">Australian Company Number</span>
-            <strong>699 207 264</strong>
+          <div class="cred-row">
+            <div class="cred-label">Registration No.</div>
+            <div class="cred-value accent-text">ACN 699 207 264</div>
           </div>
-          <div class="credential-card reveal reveal-delay-2">
-            <div class="credential-icon"><i class="ph ph-buildings"></i></div>
-            <span class="credential-label">Company Type</span>
-            <strong>Australian Proprietary Company, Limited by Shares</strong>
+          <div class="cred-row">
+            <div class="cred-label">Company Type</div>
+            <div class="cred-value">Proprietary Company, Limited by Shares</div>
           </div>
-          <div class="credential-card reveal reveal-delay-3">
-            <div class="credential-icon"><i class="ph ph-map-pin"></i></div>
-            <span class="credential-label">Registered In</span>
-            <strong>New South Wales, Australia</strong>
+          <div class="cred-row">
+            <div class="cred-label">Jurisdiction</div>
+            <div class="cred-value">New South Wales, Australia</div>
           </div>
-          <div class="credential-card reveal">
-            <div class="credential-icon"><i class="ph ph-calendar-check"></i></div>
-            <span class="credential-label">Date of Registration</span>
-            <strong>18 June 2026</strong>
+          <div class="cred-row">
+            <div class="cred-label">Date of Inception</div>
+            <div class="cred-value">18 June 2026</div>
           </div>
-          <div class="credential-card reveal reveal-delay-1">
-            <div class="credential-icon"><i class="ph ph-user-circle-gear"></i></div>
-            <span class="credential-label">Director</span>
-            <strong>Simon James Lange</strong>
+          <div class="cred-row">
+            <div class="cred-label">Directorship</div>
+            <div class="cred-value">Simon James Lange</div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ===== CONTACT ===== -->
-    <section id="contact" class="section">
+    <section id="contact" class="section section-dark contact-section">
       <div class="container contact-grid">
-        <div class="contact-info reveal">
-          <span class="eyebrow"><i class="ph ph-envelope"></i> Contact</span>
-          <h2>Ready to Start Your <span class="gradient-text">Next Project?</span></h2>
-          <p>Reach out to discuss your construction supervision and project management needs. We'd love to hear from you.</p>
-
-          <div class="contact-details">
-            <a href="tel:+61406977321" class="contact-detail-item" id="contact-phone-link">
-              <div class="contact-icon"><i class="ph ph-phone"></i></div>
-              <div>
-                <span class="contact-label">Phone</span>
-                <strong>+61 406 977 321</strong>
-              </div>
+        <div class="contact-text reveal">
+          <span class="eyebrow">Consultation</span>
+          <h2 class="split-text">Command your <br/><em>next project.</em></h2>
+          <p>Partner with CIRCA2300 for uncompromising project delivery. Reach out directly to the director to discuss your site requirements.</p>
+          
+          <div class="contact-links mt-4">
+            <a href="tel:+61406977321" class="contact-link hover-target">
+              <i class="ph-light ph-phone"></i>
+              <span>+61 406 977 321</span>
             </a>
-            <a href="mailto:circa2300@outlook.com" class="contact-detail-item" id="contact-email-link">
-              <div class="contact-icon"><i class="ph ph-envelope-simple"></i></div>
-              <div>
-                <span class="contact-label">Email</span>
-                <strong>circa2300@outlook.com</strong>
-              </div>
+            <a href="mailto:circa2300@outlook.com" class="contact-link hover-target">
+              <i class="ph-light ph-envelope-simple"></i>
+              <span>circa2300@outlook.com</span>
             </a>
-            <div class="contact-detail-item">
-              <div class="contact-icon"><i class="ph ph-user"></i></div>
-              <div>
-                <span class="contact-label">Director</span>
-                <strong>Simon James Lange</strong>
-              </div>
-            </div>
-            <div class="contact-detail-item">
-              <div class="contact-icon"><i class="ph ph-map-pin"></i></div>
-              <div>
-                <span class="contact-label">Location</span>
-                <strong>New South Wales, Australia</strong>
-              </div>
-            </div>
           </div>
         </div>
-
-        <div class="contact-form-wrapper reveal reveal-delay-1">
-          <form class="contact-form" id="contact-form">
-            <h3>Send a Message</h3>
-            <div class="form-group">
-              <label for="form-name">Full Name</label>
-              <input type="text" id="form-name" name="name" placeholder="Your full name" required />
+        
+        <div class="contact-form-container reveal stagger-2">
+          <form id="contact-form" class="luxury-form">
+            <div class="input-field">
+              <input type="text" id="name" required placeholder=" " />
+              <label for="name">Your Name</label>
+              <div class="line-focus"></div>
             </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="form-email">Email</label>
-                <input type="email" id="form-email" name="email" placeholder="you@example.com" required />
-              </div>
-              <div class="form-group">
-                <label for="form-phone">Phone</label>
-                <input type="tel" id="form-phone" name="phone" placeholder="+61 ..." />
-              </div>
+            
+            <div class="input-field">
+              <input type="email" id="email" required placeholder=" " />
+              <label for="email">Email Address</label>
+              <div class="line-focus"></div>
             </div>
-            <div class="form-group">
-              <label for="form-service">Service Required</label>
-              <select id="form-service" name="service">
-                <option value="">Select a service...</option>
-                <option value="supervision">Construction Supervision</option>
-                <option value="coordination">Project Coordination</option>
-                <option value="compliance">Quality &amp; Compliance</option>
-                <option value="other">Other</option>
-              </select>
+            
+            <div class="input-field">
+              <textarea id="message" required placeholder=" " rows="3"></textarea>
+              <label for="message">Project Details</label>
+              <div class="line-focus"></div>
             </div>
-            <div class="form-group">
-              <label for="form-message">Message</label>
-              <textarea id="form-message" name="message" rows="4" placeholder="Tell us about your project..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-submit" id="form-submit">
-              <i class="ph ph-paper-plane-tilt"></i>
-              Send Message
+            
+            <button type="submit" class="btn btn-primary hover-target w-100" id="form-submit">
+              Submit Inquiry
             </button>
           </form>
         </div>
@@ -428,47 +281,29 @@
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <div class="container footer-content">
+    <div class="container">
       <div class="footer-top">
-        <div class="footer-brand">
+        <a href="#home" class="footer-brand hover-target">
           <img src="assets/logo.svg" alt="CIRCA2300 Logo" class="footer-logo" />
-          <div>
-            <span class="brand-name">CIRCA<span class="brand-accent">2300</span></span>
-            <span class="brand-sub">PTY LTD</span>
-          </div>
-        </div>
-        <p class="footer-desc">Construction supervision and project support for professional delivery across Australia.</p>
-      </div>
-      <div class="footer-links">
-        <div class="footer-col">
-          <h4>Navigation</h4>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#why-us">Why Us</a>
-          <a href="#credentials">Credentials</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="footer-col">
-          <h4>Services</h4>
-          <a href="#services">Construction Supervision</a>
-          <a href="#services">Project Coordination</a>
-          <a href="#services">Quality &amp; Compliance</a>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <a href="tel:+61406977321">+61 406 977 321</a>
-          <a href="mailto:circa2300@outlook.com">circa2300@outlook.com</a>
-          <span>NSW, Australia</span>
+        </a>
+        <div class="footer-nav">
+          <a href="#about" class="hover-target">The Firm</a>
+          <a href="#services" class="hover-target">Expertise</a>
+          <a href="#credentials" class="hover-target">Credentials</a>
         </div>
       </div>
+      
       <div class="footer-bottom">
         <p id="footer-copyright"></p>
-        <p>ACN 699 207 264</p>
+        <div class="footer-legal">
+          <span>ACN 699 207 264</span>
+          <span class="dot-separator">•</span>
+          <span>NSW, Australia</span>
+        </div>
       </div>
     </div>
   </footer>
 
-  <!-- Toast container -->
   <div class="toast-container" id="toast-container"></div>
 
   <script src="script.js"></script>
